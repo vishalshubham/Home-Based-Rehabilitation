@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background4"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+     <LinearLayout
+         style="@style/ImageRowLayout"
+         android:orientation="vertical" >
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="Do you feel discomfort (pressure, tingling, pain, heaviness, burning, numbness) in the chest, jaw, neck, or arms?" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="false"
+                android:layout_below="@+id/textView1"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/yesradioButton1"
+                    android:gravity="center_vertical|start|left"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/noradioButton1"
+                    android:gravity="center_vertical|start|right"
+                    android:text="No" />
+
+            </RadioGroup>      
+
+     </LinearLayout>
+     
+       <LinearLayout
+           style="@style/ImageRowLayout"
+           android:orientation="vertical" >
+
+       <RelativeLayout
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent" >
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do you feel  light-headedness, dizziness, or fainting; shortness of breath, rapid heartbeat or palpitations?" />
+
+                      <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="false"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+<RadioButton
+    android:id="@+id/yesradioButton2"
+    android:gravity="center_vertical|start|left"
+    android:text="Yes" />
+
+<RadioButton
+    android:id="@+id/noradioButton2"
+    android:gravity="center_vertical|start|right"
+    android:text="No" />
+
+</RadioGroup>
+        </RelativeLayout>
+       </LinearLayout>
+        <LinearLayout
+           style="@style/ImageRowLayout"
+           android:orientation="vertical" >
+
+       <RelativeLayout
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent" >
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do you have a large meal within one hour?" />
+
+                       <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="false"
+                android:layout_below="@+id/textView3"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+<RadioButton
+    android:id="@+id/yesradioButton3"
+    android:gravity="center_vertical|start|left"
+    android:text="Yes" />
+
+<RadioButton
+    android:id="@+id/noradioButton3"
+    android:gravity="center_vertical|center_horizontal"
+    android:text="No" />
+
+</RadioGroup>
+        </RelativeLayout>
+       </LinearLayout>
+        <LinearLayout
+           style="@style/ImageRowLayout"
+           android:orientation="vertical" >
+
+       <RelativeLayout
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent" >
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do you feel emotional upset?" />
+
+                      <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="false"
+                android:layout_below="@+id/textView4"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+        <RadioButton
+    android:id="@+id/yesradioButton4"
+    android:gravity="center_vertical|start|left"
+    android:text="Yes" />
+
+        <RadioButton
+    android:id="@+id/noradioButton4"
+    android:gravity="center_vertical|start|right"
+    android:text="No" />
+
+        </RadioGroup>
+        </RelativeLayout>
+       </LinearLayout>
+        <LinearLayout
+           style="@style/ImageRowLayout"
+           android:orientation="vertical" >
+
+       <RelativeLayout
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent" >
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do you feel cold?" />
+
+                       <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="false"
+                android:layout_below="@+id/textView5"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+        <RadioButton
+    android:id="@+id/yesradioButton5"
+    android:gravity="center_vertical|start|left"
+    android:text="Yes" />
+
+        <RadioButton
+    android:id="@+id/noradioButton5"
+    android:gravity="center_vertical|start|right"
+    android:text="No" />
+
+        </RadioGroup>
+        </RelativeLayout>
+       </LinearLayout>
+       
+           <LinearLayout
+           style="@style/ImageRowLayout"
+           android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please input your blood pressure." />
+
+           <RelativeLayout
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent" >             
+
+            <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"       
+                android:max="200"
+                android:progress="100" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="100mmHg" />
+
+             </RelativeLayout>
+
+            
+       </LinearLayout>
+       <LinearLayout
+         style="@style/ImageRowLayout"
+         android:orientation="vertical" >
+
+       <RelativeLayout
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="Do you take medicines ? Is it adherent with prescription?" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="false"
+                android:layout_below="@+id/textView7"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/yesradioButton7"
+                    android:gravity="center_vertical|start|left"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/noradioButton7"
+                    android:gravity="center_vertical|start|right"
+                    android:text="No" />
+
+            </RadioGroup>      
+       </RelativeLayout>
+     </LinearLayout>
+      <LinearLayout
+         style="@style/ImageRowLayout"
+         android:orientation="vertical" >
+
+       <RelativeLayout
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Any other uncomfortable?" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_below="@+id/textView9"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/editText1"
+                android:layout_marginLeft="31dp"
+                android:text="Submit" />
+              
+       </RelativeLayout>
+     </LinearLayout>
+    </LinearLayout>
+</ScrollView>

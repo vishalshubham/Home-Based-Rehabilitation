@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llMultiMedia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/large_padding"
+        android:layout_marginTop="@dimen/xlarge_padding" >
+
+        <LinearLayout
+            style="@style/ImageRowLayout">
+            <RelativeLayout
+                style="@style/ImageRLayout">
+
+	            <ImageView
+	                android:id="@+id/create_image_sa"
+	                style="@style/ImageView"
+	                android:src="@drawable/regularreport4" />
+
+        	</RelativeLayout>
+
+            <RelativeLayout
+				style="@style/ImageRLayout.Middle">
+
+	            <ImageView
+	                android:id="@+id/create_image_ask"
+	                style="@style/ImageView"
+	                android:src="@drawable/askthedoctor6" />
+
+	        </RelativeLayout>
+
+            <RelativeLayout
+				style="@style/ImageRLayout">
+
+	            <ImageView
+	                android:id="@+id/create_image_fb"
+	                style="@style/ImageView"
+	                android:src="@drawable/regularreport5" />
+
+	        </RelativeLayout>
+
+        </LinearLayout>
+        
+        <LinearLayout
+
+        style="@style/DamageTypeOuterLayout" >
+
+
+
+        <RelativeLayout
+
+            style="@style/DamageTypeLayout">
+
+
+
+            <TextView
+                android:text="Self Assessment"
+                style="@style/DamageTypeText" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+
+            style="@style/DamageTypeLayout.Middle" >
+            <TextView
+                android:text="Ask"
+                style="@style/DamageTypeText" />
+
+               
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+
+            style="@style/DamageTypeLayout">
+
+
+
+            <TextView
+                android:text="Read Feedback"
+                style="@style/DamageTypeText" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+        
+                  
+
+        </LinearLayout>
+</ScrollView>
+

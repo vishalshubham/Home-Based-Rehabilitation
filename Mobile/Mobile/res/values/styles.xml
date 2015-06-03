@@ -1,0 +1,127 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="ImageRowLayout">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="ImageRLayout">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:background">@color/dark_grey</item>
+    </style>
+    
+    <style name="ImageRLayout.Middle">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+        
+    <style name="ImageView">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/very_light_grey</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+        <style name="DamageTypeText">
+
+        <item name="android:layout_width">fill_parent</item>
+
+        <item name="android:layout_height">fill_parent</item>
+
+        <item name="android:gravity">center</item>
+
+        <item name="android:scaleType">fitCenter</item>
+
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:textSize">10sp</item>
+
+    </style>
+
+
+
+    <style name="DamageTypeLayout">
+
+        <item name="android:layout_width">90dp</item>
+
+        <item name="android:layout_height">20dp</item>
+
+        <item name="android:padding">1dp</item>
+
+    </style>
+
+
+
+    <style name="DamageTypeLayout.Middle">
+
+        <item name="android:layout_marginLeft">10dp</item>
+
+        <item name="android:layout_marginRight">10dp</item>
+
+    </style>
+
+
+
+    <style name="DamageTypeOuterLayout">
+
+        <item name="android:layout_width">300dp</item>
+
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:layout_gravity">center_horizontal</item>
+
+        <item name="android:gravity">center_horizontal</item>
+
+
+    </style>
+    
+    <style name="BottomToTopAnim" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/bottomview_anim_enter</item>
+        <item name="@android:windowExitAnimation">@anim/bottomview_anim_exit</item>
+    </style>
+    
+     <!--半透明背景Theme-->
+   <style name="BottomViewTheme_Defalut">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+<!--透明背景Theme-->
+    <style name="BottomViewTheme_Transparent">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <!-- Transparent -->
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>

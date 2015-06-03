@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.test1.QaAskActivity" >
+
+    <EditText
+        android:id="@+id/qa_ask_subject"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Subject:" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button_qa_ask_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="23dp"
+        android:text="Send" />
+
+    <ImageView
+        android:id="@+id/qa_ask_attach_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button_qa_ask_send"
+        android:layout_toRightOf="@+id/button_qa_ask_send"
+        android:src="@drawable/pin" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/qa_ask_subject"
+        android:layout_below="@+id/qa_ask_subject"
+        android:layout_marginTop="17dp"
+        android:background="@color/dark_grey"
+        android:padding="1dp" >
+
+        <EditText
+            android:id="@+id/qa_ask_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:padding="10dp" />
+    </LinearLayout>
+
+</RelativeLayout>

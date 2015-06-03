@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Simple-expand: simple jQuery plug-in to expand/collapse elements">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/expandStylesheet.css">
+    <link href="css/prettify.css" type="text/css" rel="stylesheet">
+
+
+    <title>Simple-expand: simple jQuery plug-in to expand/collapse elements</title>
+
+        <style>
+            
+            .content {display:none;}
+            
+            #demo-with-image .expander.expanded {
+                padding-left: 13px;
+                background-position: left center;
+                background-repeat: no-repeat;
+                background-image: url(images/expanded.gif);
+            }
+        
+            #demo-with-image .expander.collapsed {
+                padding-left: 13px;
+                background-position: left center;
+                background-repeat: no-repeat;
+                background-image: url(images/collapsed.gif);
+            }        
+
+
+            #demo3.expanded .expander {
+                font-weight:bold;
+                font-size:125%;
+            }
+                
+            #demo3.expanded .content {
+                display:inherit;
+            }
+        
+            #demo3.collapsed .content {
+                display:none;
+            }
+            
+            #demo-nesting-sub1 {
+                margin-left: 20px;
+            }
+            
+            #demo-nesting-sub2 {
+                margin-left: 40px;
+            }            
+        
+        </style>
+  </head>
+
+  <body>
+
+    <!-- MAIN CONTENT -->
+    
+    
+    
+    <div id="demos_wrap" class="outer">
+    <section id="demos" class="inner">
+
+            <h1>
+            Demos
+            </h1>
+
+            <!-- ********************************************
+            demo-simplest
+            ******************************************** -->
+            <h6 id="demo-simplest-top">1. This is the simplest version</h6>
+            <div class="demo-frame">
+                <div id="demo-simplest">
+                    <a class="expander collapsed" href="#">click me</a>
+                    <div style="display: none;" class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+ 					</div>
+                </div>
+            </div>
+            
+        
+          
+        </section>
+    </div>
+
+    <script type="text/javascript" src="css/prettify.js"></script>
+    <script type="text/javascript" src="css/jquery.js"></script>
+    <script type="text/javascript" src="css/simple-expand.js"></script>
+    
+    <script type="text/javascript">
+        $(function () {
+            $('.expander').simpleexpand();
+            prettyPrint();
+        });
+    </script>
+</body></html>
